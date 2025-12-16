@@ -64,7 +64,7 @@ For tree-based models, feature importance was extracted.
 ## 📉 Visualizations
 
 
-  ![Actual vs Predicted Crude Rate scatter plot](images/feature_importance.png)
+  ![Actual vs Predicted Crude Rate scatter plot](images/scatter)
 
   ![Feature Importance](images/importance)
 
