@@ -9,67 +9,69 @@ demographic, temporal, and prescription-related features.
 ## 📊 Dataset
 
 **Source:**  
- kaggle- US Opioid Overdose Deaths-[https://www.kaggle.com/datasets/thedevastator/us-opioid-overdose-deaths]
-**Features used:**
-- Year
-- Population
-- Deaths
-- Prescription volume
-- State (One-Hot Encoded)
+[Kaggle – US Opioid Overdose Deaths](https://www.kaggle.com/datasets/thedevastator/us-opioid-overdose-deaths)
+
+**Features Used:**
+- `Year` – the year of the data
+- `Population` – population of the state
+- `Deaths` – number of opioid overdose deaths
+- `Prescriptions Dispensed` – prescription volume in millions
+- `State` – state information (One-Hot Encoded)
 
 **Target Variable:**
-- Crude Rate (Deaths per 100,000 population)
+- `Crude Rate` – deaths per 100,000 population
 
 ---
 
 ## 🧠 Models Used
 
-The following regression models were trained and compared:
+Regression models trained and compared:
 
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-- Support Vector Regression (SVR)
-- K-Nearest Neighbors (KNN)
+- **Linear Regression**
+- **Decision Tree Regressor**
+- **Random Forest Regressor**
+- **Gradient Boosting Regressor**
+- **Support Vector Regression (SVR)**
+- **K-Nearest Neighbors (KNN)**
 
 ---
 
 ## 📈 Model Evaluation
 
-Models were evaluated using:
-- MAE (Mean Absolute Error)
-- RMSE (Root Mean Squared Error)
-- R² Score
-- Accuracy (%) = R² × 100
+Evaluation metrics:
 
-### Best Performing Model:
-**Random Forest Regressor**
+- **MAE** – Mean Absolute Error
+- **RMSE** – Root Mean Squared Error
+- **R² Score**
+- **Accuracy (%)** = R² × 100
+
+**Best Performing Model:**  
+**Random Forest Regressor** with ~97% R² accuracy
 
 ---
 
 ## 🔍 Feature Importance
 
-For tree-based models, feature importance was extracted.
-Top contributing features include:
-- Population
-- Deaths
-- Year
-- Certain states (e.g., West Virginia)
+For tree-based models, feature importance was extracted.  
+**Top contributing features include:**
+1. `Population`
+2. `Deaths`
+3. `Year`
+4. Certain states (e.g., `West Virginia`)
 
 ---
 
 ## 📉 Visualizations
 
-- Actual vs Predicted Crude Rate
+- Actual vs Predicted Crude Rate scatter plot
 - Feature importance bar chart
 
 ---
 
 ## 🚀 How to Run
 
+1. Clone the repository:
+
 ```bash
 git clone https://github.com/USERNAME/US_Opioid_Overdose_Deaths_ml.git
 cd US_Opioid_Overdose_Deaths_ml
-pip install -r requirements.txt
-python main.py
